@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "hardhat-compile": "npx hardhat compile",
-    "blockchain-local": "npx hardhat node"
+    "local-test-node": "npx hardhat node",
+    "blockchain-local": "npx hardhat run scripts/deploy.js --network localhost"
   },
   "eslintConfig": {
     "extends": [
