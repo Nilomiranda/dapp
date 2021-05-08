@@ -10,8 +10,8 @@ contract Token {
 
     mapping(address => uint) balances;
 
-    constructor() {
-        balances[msg.sender] = totalSupply;
+    constructor(string memory name, string memory symbol) ERC20(name, symbol) {
+         balances[msg.sender] = totalSupply;
     }
 
     function transfer(address to, uint amount) external {
